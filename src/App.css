@@ -1,0 +1,37 @@
+#root {
+  max-width: 1280px;
+}
+
+.loading-container {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.dots {
+  animation: blinkDots 1.5s infinite steps(4, end);
+}
+
+@keyframes blinkDots {
+  0% {
+    content: "";
+    opacity: 0;
+  }
+  25% {
+    content: ".";
+    opacity: 0.33;
+  }
+  50% {
+    content: "..";
+    opacity: 0.66;
+  }
+  75% {
+    content: "...";
+    opacity: 1;
+  }
+  100% {
+    content: "";
+    opacity: 0;
+  }
+}
+
