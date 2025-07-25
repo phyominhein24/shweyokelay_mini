@@ -11,6 +11,7 @@ export default {
         title: "16px",
         subtitle: "14px",
         body: "13px",
+        inputs: "1rem",
       },
       colors: {
         primary: ["#c4942f"],

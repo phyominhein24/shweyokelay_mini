@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const countdownSlice = createSlice({
   name: "countdown",
   initialState: {
-    timeLeft: 600, // 10 minutes in seconds
+    timeLeft: 900, // 15 minutes in seconds
     isRunning: false,
   },
   reducers: {
@@ -19,7 +19,7 @@ const countdownSlice = createSlice({
       }
     },
     resetTimer: (state) => {
-      state.timeLeft = 600;
+      state.timeLeft = 900;
       state.isRunning = false;
     },
   },
