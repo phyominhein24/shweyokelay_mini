@@ -76,10 +76,10 @@ const MobileMenu = () => {
                 {t("faqs")}
               </Link>
               <Link
-                to="/policy"
+                to="/terms"
                 onClick={() => dispatch(mobileMenuToggle())}
                 className={`p-5 text-center text-md font-semibold transition-colors duration-400 hover:text-primary-0 ${
-                  location.pathname === "policy"
+                  location.pathname === "terms"
                     ? "text-primary-0 bg-stone-300"
                     : ""
                 }`}

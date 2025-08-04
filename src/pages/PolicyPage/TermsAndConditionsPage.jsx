@@ -382,6 +382,8 @@ const PolicyPage = () => {
                 <p className="text-body text-gray-700 py-1">
                   {`If the User wishes to contact Shwe Yoke Lay Express (Mini App) for further information, please contact the Customer support team of Shwe Yoke Lay Express (Mini App) via phone, email or send texts through the feature for Users in 1875 Bay Din (Mini App).`}
                 </p>
+                <p className="text-body text-gray-700 py-1">{`Shwe Yoke Lay Express Hotline: 09 408800095,09 4088000098`}</p>
+                <p className="text-body text-gray-700 py-1">{`Email: sylexpress.complaint@gmail.com`}</p>
               </div>
             </div>
           </section>

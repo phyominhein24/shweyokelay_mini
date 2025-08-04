@@ -44,7 +44,7 @@ const FaqPage = () => {
                   1. Where are the Shwe Yoke Lay gates located?
                 </h3>
                 <p className="text-body text-gray-700">
-                  The Headoffice of Shwe Yoke Lay’s Gate was located in Yangon.
+                  The Head office of Shwe Yoke Lay’s Gate was located in Yangon.
                 </p>
               </div>
 
@@ -54,21 +54,21 @@ const FaqPage = () => {
                   2. How many trips do you have?
                 </h3>
                 <p className="text-body text-gray-700">
-                  We have Yangon ~ Taunggyi and Yangon ~ Mandalay but we are
-                  closing Yangon ~ Mandalay Trip Temporary.
+                  Shwe Yoke Lay Express has routes from Yangon to Taunggyi and
+                  Yangon to Mandalay, but the Yangon to Mandalay route is
+                  temporarily suspended.
                 </p>
               </div>
 
               {/* Question 3 */}
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  3. We have Yangon ~ Taunggyi and Yangon ~ Mandalay but we are
-                  closing Yangon ~ Mandalay Trip Temporary.
+                  3. How to purchase bus ticket?
                 </h3>
                 <p className="text-body text-gray-700">
                   You can select seat yourself and after making the payment by
                   KBZPay within the application, you can screenshot the E-ticket
-                  or check the E-ticket in the My Tickets.
+                  or check the E-ticket in the ‘My Tickets’.
                 </p>
               </div>
 
@@ -79,7 +79,7 @@ const FaqPage = () => {
                 </h3>
                 <p className="text-body text-gray-700">
                   Yes, you can bring pets but they should be carried from the
-                  belly of the vehicle.
+                  undercarriage of the vehicle.
                 </p>
               </div>
 
@@ -89,7 +89,7 @@ const FaqPage = () => {
                   5. Can I cancel or refund for purchasing tickets?
                 </h3>
                 <p className="text-body text-gray-700">
-                  Please note that bookings are final and non-refundable.
+                  Purchased tickets cannot be canceled and non-refundable.
                 </p>
               </div>
 
@@ -106,24 +106,36 @@ const FaqPage = () => {
               {/* Question 7 */}
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  7. Can I change date and time of ticket?
+                  7. Can I change date and time of purchased ticket?
                 </h3>
                 <p className="text-body text-gray-700">
                   Yes, you can modify your travel date and time with “Shwe Yoke
                   Lay” Highway Express. Changes must be requested at least two
-                  days before your original departure date, and a 15% service
-                  fees will apply. Please contact our customer support team (to
+                  days before your original departure date, and 15% service fees
+                  will be applied. Please contact our customer support team (to
                   contact 09 408800095) to assist you with the adjustment. We
                   appreciate your understanding and are here to help ensure your
-                  journey is as smooth as possible. Please note that bookings
-                  are final and non-refundable.
+                  journey is as smooth as possible.
                 </p>
               </div>
 
               {/* Question 8 */}
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  8. What should I do if I encounter a problem while booking a
+                  8. What do I need to bring to Bus station?
+                </h3>
+                <p className="text-body text-gray-700">
+                  If you are a Myanmar citizen, you have to bring your NRC and
+                  if you are a foreigner, a passport is needed to bring along
+                  with the purchased E-ticket. When you arrived at the
+                  bus-station, you have to show the purchased seat number to
+                  verify you are a right customer.
+                </p>
+              </div>
+              {/* Question 9 */}
+              <div>
+                <h3 className="text-md font-bold mb-2">
+                  9. What should I do if I encounter a problem while booking a
                   ticket?
                 </h3>
                 <p className="text-body text-gray-700">
@@ -133,30 +145,17 @@ const FaqPage = () => {
                   ensure a smooth booking experience.
                 </p>
               </div>
-              {/* Question 9 */}
-              <div>
-                <h3 className="text-md font-bold mb-2">
-                  9. How do I know that I have purchased a ticket? When I arrive
-                  at the bus stop, what will I show as proof?
-                </h3>
-                <p className="text-body text-gray-700">
-                  Once you have completed your purchase, your E-ticket will be
-                  available. Alternatively, you can find it in the My Ticket.
-                  Your E-ticket will include a unique reference number for
-                  verification.
-                </p>
-              </div>
               {/* Question 10 */}
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  10. What do I need to bring to Bus station?
+                  10. How do I know that I have purchased a ticket? When I
+                  arrive at the bus stop, what will I show as proof?
                 </h3>
                 <p className="text-body text-gray-700">
-                  If you are a Myanmar citizen, you have to bring your NRC and
-                  if you are a foreigner, a passport is needed to bring along
-                  with the purchased E-ticket. When you arrived at the
-                  bus-station, you have to show the purchased seat number to
-                  verify you are a right customer.
+                  Once you have completed your purchase, your E-ticket will be
+                  available. Alternatively, you can find it in the ‘My Ticket’.
+                  Your E-ticket will include a unique reference number for
+                  verification.
                 </p>
               </div>
             </div>
@@ -170,7 +169,7 @@ const FaqPage = () => {
                 <strong>Email:</strong> sylexpress.complaint@gmail.com
               </p>
               <p className="text-body text-gray-700">
-                <strong>Hotline:</strong> 09 408800095,09 4088000098
+                <strong>Hotline:</strong> 09 408800095, 09 4088000098
               </p>
             </div>
           </section>
@@ -202,7 +201,7 @@ const FaqPage = () => {
                 </h3>
                 <p className="text-body text-gray-700">
                   ရွှေရုပ်လေး Express မှာ ရန်ကုန်-တောင်ကြီး နှင့်
-                  ရန်ကုန်-မန္တလေး ခရီးစဉ်ရှိပေမယ့် ရန်ကုန်-မန္တလေး ခရီးစဉ်ကို
+                  ရန်ကုန်-မန္တလေး ခရီးစဉ်ရှိပေမယ့် ရန်ကုန်-မန္တလေး ခရီးစဉ်ကို
                   ယာယီ ပိတ်ထားပါတယ်။
                 </p>
               </div>
@@ -212,10 +211,12 @@ const FaqPage = () => {
                   ၃။ ရွှေရုပ်လေး Express လက်မှတ် ဘယ်လိုဝယ်ယူရပါသလဲ?
                 </h3>
                 <p className="text-body text-gray-700">
-                  ခရီးစဉ်နှင့် အချိန်ကို ရွေးချယ်ပြီး မိမိစိတ်ကြိုက်ခုံကို
-                  ရွေးချယ် ဝယ်ယူနိုင်ပါသည်။ KBZPay ဖြင့် ငွေပေးချေပြီး E-ticket
-                  ကို screenshot ရိုက်ယူရန် သို့မဟုတ် My-Tickets တွင်
-                  ကြည့်ရှုနိုင်သည်။
+                  လူကြီးမင်း သွားလိုသော ခရီးစဉ် ၊ အချိန် ကိုရွေးချယ်ပြီး
+                  မိမိစိတ်ကြိုက် ခုံ ကို ရွေးချယ် ဝယ်ယူရမှာ ဖြစ်ပါသည်။
+                  ခရီးစဉ်သေချာပြီဆိုပါက လက်မှတ်တန်ဘိုးငွေကို KBZPay ဖြင့်
+                  ပေးချေပြီးလျှင် လူကြီးမင်း၏ E-ticket ကို screenshot
+                  ရိုက်ယူနိုင်သည် သို့မဟုတ် My-Tickets တွင်
+                  ဝင်ရောက်ကြည့်ရှုနိုင်သည်။
                 </p>
               </div>
 
@@ -224,56 +225,80 @@ const FaqPage = () => {
                   ၄။ အိမ်မွေးတိရစ္ဆာန်လေးတွေကို ယဉ်ပေါ်မှာ တင်ခေါ်လို့ရမလား?
                 </h3>
                 <p className="text-body text-gray-700">
-                  ယာဉ်ရဲ့အောက်ပိုင်းမှသာ တင်ခေါ်နိုင်ပါသည်။
+                  အိမ်မွေးတိရိစ္ဆာန်လေးတွေကို ခေါ်ဆောင်နိုင်သော်လည်း
+                  ယာဉ်၏အောက်ပိုင်းမှသာ တင်ပြီး ခေါ်ဆောင်နိုင်ပါတယ်။
                 </p>
               </div>
 
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  ၅။ ဝယ်ယူပြီး လက်မှတ်များကို Cancel သို့မဟုတ် Refund
-                  လုပ်နိုင်ပါသလား?
+                  ၅။ ဝယ်ယူပြီးလက်မှတ်များကိုcancelလုပ်နိုင်လားဒါမှမဟုတ်Refund
+                  ရောလုပ်လို့ရနိုင်ပါလား?
                 </h3>
                 <p className="text-body text-gray-700">
-                  Cancel သို့မဟုတ် Refund လုပ်၍မရပါ။
+                  ဝယ်ယူပြီးလက်မှတ်များအတွက် cancel လုပ်ခြင်း၊ Refund လုပ်ခြင်း
+                  မရရှိနိုင်ပါ။
                 </p>
               </div>
 
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  ၆။ ဝယ်ယူပြီး ခရီးစဉ်အစီအစဉ်ကို ပြောင်းလဲနိုင်ပါသလား?
+                  ၆။ ဝယ်ယူပြီးလက်မှတ်များကို ခရီးစဉ်အစီအစဉ်ကို
+                  ပြောင်းလဲနိုင်ပါသလား?
                 </h3>
                 <p className="text-body text-gray-700">
-                  ခရီးစဉ်ပြောင်းလဲ၍မရပါ။
+                  ဝယ်ယူပြီးလက်မှတ်များအတွက် ခရီးစဉ်ပြောင်းလဲလို့ မရနိုင်ပါ။
                 </p>
               </div>
 
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  ၇။ ရက်စွဲနှင့် အချိန်ကို ပြောင်းလဲနိုင်ပါသလား?
+                  ၇။ ဝယ်ယူပြီးလက်မှတ်၏ ရက်စွဲနှင့် အချိန်ကို ပြောင်းလဲနိုင်လား?
                 </h3>
                 <p className="text-body text-gray-700">
-                  ခရီးစဉ်အတွက် မူလထွက်ခွာမည့်ရက်မတိုင်မီ အနည်းဆုံး ၂ ရက်
-                  ကြိုတင်သတိပေးရပါမည်။ ၁၅% ဝန်ဆောင်ခ ပေးချေရပါမည်။
+                  ဝယ်ယူပြီးလက်မှတ်၏ ရက်စွဲနှင့် အချိန်ကို
+                  ရွှေရုပ်လေးဂိတ်(ရုံးချုပ်)သို့ ဖုန်းဆက်ပြီး
+                  ပြောင်းလဲနိုင်ပါတယ်...ပြောင်းလဲမှုများအတွက်
+                  မူလထွက်ခွာမည့်ရက်မတိုင်မီ အနည်းဆုံး ၂ ရက်
+                  ကြိုတင်လျှောက်ထားရမည်ဖြစ်ပြီး ၀န်ဆောင်ခမှာ လက်မှတ်တန်ဖိုး၏ ၁၅%
+                  ဝန်ဆောင်ခ ကုန်ကျမည်ဖြစ်ပါသည်။ ပြောင်းလဲလိုပါက ရွှေရုပ်လေး
+                  customer service center ဖုန်းနံပါတ် - ၀၉ ၄၀၈၈၀၀၀၉၅ သို့
+                  ဆက်သွယ်နိုင်ပါသည်။
                 </p>
               </div>
 
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  ၈။ လက်မှတ်မှာနေစဉ် ပြဿနာများကြုံရပါက ဘယ်နေရာဆက်သွယ်ရမည်နည်း?
+                  ၈။ ကားလာစီးရင် ဘာတွေ ယူခဲ့ဖို့လိုပါသလဲ?
                 </h3>
                 <p className="text-body text-gray-700">
-                  Customer service center ဖုန်းနံပါတ် - ၀၉ ၄၀၈၈၀၀၀၉၅ သို့
-                  ဆက်သွယ်ပါ။
+                  ဝယ်ယူထားသော E-ticket နှင့် မြန်မာနိုင်ငံသားဆိုလျှင် မှတ်ပုံတင်
+                  ၊ နိုင်ငံခြားသာဆိုလျှင် ပတ်စပို့ ပါဖို့ လိုအပ်ပါသည်။
                 </p>
               </div>
 
               <div>
                 <h3 className="text-md font-bold mb-2">
-                  ၉။ လက်မှတ်ဝယ်ပြီးကြောင်း ဘယ်လိုသိနိုင်မလဲ?
+                  ၉။ လက်မှတ်ကြိုတင်မှာယူနေစဉ်မှာပြဿနာတစ်ခုခုကြုံလာပါက
+                  ဘယ်ကိုဆက်သွယ်ရမည်နည်း?
                 </h3>
                 <p className="text-body text-gray-700">
-                  E-ticket ကို ရယူနိုင်ပါသည်။ &quote;ဝယ်ထားသောလက်မှတ်များ&quote;
-                  တွင် ကြည့်ရှုနိုင်ပါသည်။
+                  လက်မှတ်ကြိုတင်မှာယူနေစဉ်အတွင်း ပြဿနာတစ်စုံတစ်ရာ ကြုံတွေ့ရပါက
+                  ကျွန်ုပ်တို့၏ Customer service center ဖုန်း နံပါတ် - ၀၉
+                  ၄၀၈၈၀၀၀၉၅ သို့ ချက်ချင်း ဆက်သွယ် နိုင်ပါသည်။
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-md font-bold mb-2">
+                  ၉။ လက်မှတ်ဝယ်ပြီးကြောင်း ဘယ်လိုသိနိုင်မလဲ။ ဂိတ်ရောက်ရင် ဘာနဲ့
+                  အထောက်အထားပြမလဲ?
+                </h3>
+                <p className="text-body text-gray-700">
+                  လက်မှတ်ဝယ်ပြီးပါက E-ticket အား ရရှိပါမည် သို့မဟုတ် My Ticket
+                  တွင် ၀င်ရောက်စစ်ဆေးနိုင်သည်။ ဂိတ်သို့ရောက်ရှိပါက
+                  မိမိရရှိထားသော ခုံနံပါတ် နှင့် E-ticket ရမည် ဖြစ်ပါသည်။
+                  E-ticket တွင် ဘောက်ချာနံပါတ် ပါဝင်ပါသည်။
                 </p>
               </div>
             </div>

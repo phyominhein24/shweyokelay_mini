@@ -1,5 +1,5 @@
 import { GrLocation, GrMapLocation } from "react-icons/gr";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import AppBar from "../../components/AppBar";
 import { BsTicket } from "react-icons/bs";
@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { MdOutlineDepartureBoard } from "react-icons/md";
 import { PiSeatbelt } from "react-icons/pi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
+import { ShowToast } from "../../helpers/nativeApi";
 import { VscNote } from "react-icons/vsc";
 import html2canvas from "html2canvas";
 import { seatTypeColors } from "../../helpers/asset";
@@ -34,42 +35,43 @@ const SuccessPage = () => {
   const { userType } = useSelector((state) => state.home);
 
   // Download Ticket
- const divRef = useRef(null);
- const [screenshot, setScreenshot] = useState(null);
+  const divRef = useRef(null);
 
- const handleSaveTicket = async () => {
-   if (!divRef.current) return;
+  const handleSaveTicket = async () => {
+    if (!divRef.current) return;
+    console.log("handle save ticket works");
+    try {
+      const canvas = await html2canvas(divRef.current, {
+        useCORS: true,
+        scale: 2,
+      });
+      // document.body.appendChild(canvas);
+      const imgData = canvas.toDataURL("image/png");
 
-   try {
-     const canvas = await html2canvas(divRef.current, {
-       useCORS: true,
-       scale: 2,
-     });
-     const imgData = canvas.toDataURL("image/jpeg", 1.0); 
-     setScreenshot(imgData);
-     
-     if (!screenshot) return;
-     const link = document.createElement("a");
-     link.href = screenshot;
-     link.download = "Shwe-Yote-Lay-Ticket.jpg";
-     document.body.appendChild(link);
-     link.click();
-     document.body.removeChild(link);
-   } catch (error) {
-     console.error("Failed to capture div:", error);
-   }
- };
-
- useEffect(()=>{
-  handleSaveTicket()
- },[])
+      const base64Content = imgData.split(",")[1];
+      // console.log('base64Content', base64Content);
+      if (!base64Content || typeof base64Content !== "string") {
+        throw new Error("Failed to extract base64 image data.");
+      }
+      window.ma.saveBase64Image({
+        base64: base64Content,
+      });
+      ShowToast({
+        title: "Ticket saved to your phone.",
+        icon: "success",
+        duraion: 1500,
+      });
+    } catch (error) {
+      console.error("Failed to capture div:", error);
+    }
+  };
 
   return (
     <>
       <AppBar pageTitle={t("successful_title")} goTo="/verify" />
 
       {/* to save ticket */}
-      <div ref={divRef} className={`${screenshot ? "m-1" : "m-0"}`}>
+      <div ref={divRef} className="m-2">
         <div className="flex justify-center pb-5">
           <img
             src="/images/brand.png"
@@ -251,17 +253,17 @@ const SuccessPage = () => {
         </div>
       </div>
 
-      <div className="flex w-full mt-5">
+      {/* <div className="flex w-full mt-5">
         <Link
           to="/"
           className="w-full bg-primary-0 hover:bg-secondary-0 shadow-md hover:shadow-none px-5 py-[10px] border-none rounded-md text-[14px] font-semibold text-center transition-colors duration-400 "
         >
           {t("go_home")}
         </Link>
-      </div>
+      </div> */}
 
       {/* Buttons */}
-      {/* <div className="pt-5 w-full flex gap-3 items-center justify-center text-center">
+      <div className="pt-5 w-full flex gap-3 items-center justify-center text-center">
         <Link
           to="/"
           className="w-[180px] bg-stone-400 hover:bg-stone-300 px-5 py-2 border-none rounded-sm text-subtitle font-semibold transition-colors duration-400 "
@@ -275,7 +277,7 @@ const SuccessPage = () => {
         >
           {t("save_ticket")}
         </button>
-      </div> */}
+      </div>
     </>
   );
 };

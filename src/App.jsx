@@ -12,18 +12,17 @@ import MainLayout from "./components/layouts/MainLayout";
 import MyTicketDetailPage from "./pages/MyTicket/MyTicketDetailPage";
 import MyTicketPage from "./pages/MyTicket/MyTicketPage";
 import NotFound from "./pages/NotFound/NotFound";
-import PolicyPage from "./pages/PolicyPage/TermsAndConditionsPage";
 import { Provider } from "react-redux";
 import SearchPage from "./pages/SearchPage/SearchPage";
 import SeatSelectionPage from "./pages/SatSelectionPage/SeatSelectionPage";
 import SuccessPage from "./pages/SuccessPage/SuccessPage";
 import TermsAndConditions from "./pages/PolicyPage/TermsAndConditions";
+import TermsAndConditionsPage from "./pages/PolicyPage/TermsAndConditionsPage";
 import TravellerInfoPage from "./pages/TravellerInfoPage/TravellerInfoPage";
 import VerifyInfoPage from "./pages/VerifyInfoPage/VerifyInfoPage";
 import { store } from "./redux/Store";
 
 function App() {
-
   return (
     <Provider store={store}>
       <HashRouter>
@@ -33,7 +32,9 @@ function App() {
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/booking" element={<BookingPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/policy" element={<PolicyPage />} />
+            {/* for main page */}
+            <Route path="/terms" element={<TermsAndConditionsPage />} />
+            {/* for t & c at verify info page */}
             <Route
               path="/terms-and-conditions"
               element={<TermsAndConditions />}
@@ -59,7 +60,7 @@ function App() {
   //       <Route path="/about" element={<AboutUsPage />} />
   //       <Route path="/booking" element={<BookingPage />} />
   //       <Route path="/contact" element={<ContactPage />} />
-  //       <Route path="/policy" element={<PolicyPage />} />
+  //       <Route path="/terms" element={<TermsAndConditionsPage />} />
   //       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
   //       <Route path="/faqs" element={<FaqPage />} />
   //       <Route path="/search" element={<SearchPage />} />
