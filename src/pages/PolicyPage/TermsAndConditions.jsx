@@ -382,6 +382,8 @@ const TermsAndConditions = () => {
                 <p className="text-body text-gray-700 py-1">
                   {`If the User wishes to contact Shwe Yoke Lay Express (Mini App) for further information, please contact the Customer support team of Shwe Yoke Lay Express (Mini App) via phone, email or send texts through the feature for Users in 1875 Bay Din (Mini App).`}
                 </p>
+                <p className="text-body text-gray-700 py-1">{`Shwe Yoke Lay Express Hotline: 09 408800095,09 4088000098`}</p>
+                <p className="text-body text-gray-700 py-1">{`Email: sylexpress.complaint@gmail.com`}</p>
               </div>
             </div>
           </section>
@@ -755,11 +757,10 @@ const TermsAndConditions = () => {
               <div>
                 <h3 className="text-md font-bold mb-2">၂၁။ ဆက်သွယ်ရန်</h3>
                 <p className="text-body text-gray-700 py-1">
-                  {`အကယ်၍ အသုံးပြုသူသည် မေးခွန်းများ သို့မဟုတ် မှတ်ချက်များရှိ၍ ရွှေရုပ်လေး Express (Mini App) ထံ ဆက်သွယ်လိုပါက၊ ကျေးဇူးပြု၍ ရွှေရုပ်လေး Express (Mini App) ၏ customer support team သို့ အီးမေးလ်ပေးပို့ခြင်းဖြင့်ဖြစ်စေ သို့မဟုတ် ရွှေရုပ်လေး Express (Mini App) အတွင်းရှိ အသုံးပြုသူများမေးမြန်းနိုင်သည့် feature မှတစ်ဆင့်ပေးပို့နိုင်ပါသည်။ 
-ရွှေရုပ်လေး Express Hotline:  09 408800095,09 4088000098
-ရွှေရုပ်လေး Express Email:  sylexpress.complaint@gmail.com     
-`}
+                  {`အကယ်၍ အသုံးပြုသူသည် မေးခွန်းများ သို့မဟုတ် မှတ်ချက်များရှိ၍ ရွှေရုပ်လေး Express (Mini App) ထံ ဆက်သွယ်လိုပါက၊ ကျေးဇူးပြု၍ ရွှေရုပ်လေး Express (Mini App) ၏ customer support team သို့ အီးမေးလ်ပေးပို့ခြင်းဖြင့်ဖြစ်စေ သို့မဟုတ် ရွှေရုပ်လေး Express (Mini App) အတွင်းရှိ အသုံးပြုသူများမေးမြန်းနိုင်သည့် feature မှတစ်ဆင့်ပေးပို့နိုင်ပါသည်။`}
                 </p>
+                <p className="text-body text-gray-700 py-1">{`ရွှေရုပ်လေး Express Hotline:  09 408800095,09 4088000098`}</p>
+                <p className="text-body text-gray-700 py-1">{`ရွှေရုပ်လေး Express Email:  sylexpress.complaint@gmail.com`}</p>
               </div>
             </div>
           </section>
