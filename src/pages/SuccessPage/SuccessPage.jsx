@@ -87,7 +87,7 @@ const SuccessPage = () => {
         {/* Ticket Detail */}
         <div className="flex flex-col border border-black p-3 md:p-5 md:mb-5">
           <p className="mb-5 py-3 border-b border-b-black text-title font-bold text-center">
-            T{t("ticket_details")}
+            {t("ticket_details")}
           </p>
 
           {/* ticket */}
@@ -182,7 +182,7 @@ const SuccessPage = () => {
                   {selectedSeat &&
                     selectedSeat?.map((seat) => (
                       <p
-                        className={`inline-block min-w-[40px] text-center px-3 py-1 border border-gray-500 rounded-lg ${
+                        className={`min-w-[40px] text-center px-3 py-1 border border-gray-500 rounded-lg ${
                           seatTypeColors[seat.type]?.color || "bg-gray-300"
                         }`}
                         key={seat.number}

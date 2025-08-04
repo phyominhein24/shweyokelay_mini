@@ -160,7 +160,7 @@ const TravellerInfoPage = () => {
                 {t("total_amount")}
               </div>
               <div className="font-semibold text-title">
-                {selectedSeat.length * 45000}
+                {selectedSeat.length * selectedRoute?.price}
               </div>
             </div>
           </div>
